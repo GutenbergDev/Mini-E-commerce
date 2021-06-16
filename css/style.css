@@ -1,0 +1,331 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 10px;
+}
+
+#models {
+  display: none;
+}
+
+.container-item {
+  display: flex;
+  align-items: center;
+  max-width: 200px;
+  height: auto;
+  background-color: rgb(255, 255, 255);
+}
+
+.c-card {
+  display: flex;
+  flex-direction: column;
+  width: 180px;
+  height: 250px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.c-card__item {
+  width: 95%;
+  height: 80%;
+  background-color: #e9e9e9;
+  cursor: pointer;
+}
+
+.container-item img {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.c-card__item2 {
+  width: 95%;
+  height: 80%;
+}
+
+.c-card__text {
+  padding: 10px 0px;
+}
+
+.c-card__text h3,
+p {
+  margin-bottom: 5px;
+}
+
+.c-card__text h3 {
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.c-card__text p,
+h4 {
+  font-size: 0.8rem;
+  font-weight: normal;
+}
+
+.c-card__text p,
+s {
+  color: rgb(146, 146, 146);
+}
+
+.c-card__text s {
+  float: left;
+  margin-right: 8px;
+  font-size: 0.8rem;
+}
+
+.c-card__text h4 {
+  font-size: 0.9rem;
+  margin-left: 30px;
+}
+
+/* Parte do Modal */
+#modalContainer {
+  display: none;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  transition: all ease 0.5s;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(196, 196, 196, 1);
+  overflow-y: auto;
+}
+
+.voltarMobile {
+  display: none;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.voltarMobile #btnVoltarMb {
+  outline: 0;
+  border: 0;
+  background-color: #db6076;
+  color: #fff;
+  padding: 5px 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 10px;
+  transition: 0.5s;
+}
+
+.voltarMobile #btnVoltarMb:hover {
+  background-color: #b14b5c;
+  transition: 0.5s;
+}
+
+.container-item-c {
+  display: flex;
+  width: 800px;
+  height: auto;
+  background-color: rgb(255, 255, 255);
+  flex-direction: column;
+}
+
+.container-mobile-item {
+  display: flex;
+  padding: 10px 0;
+}
+
+.c-container {
+  width: 50%;
+  height: 100%;
+  margin-left: 10px;
+  margin-right: 20px;
+}
+
+.c-container2 {
+  width: 40%;
+  height: 100%;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+#imgProduto {
+  width: 100%;
+}
+
+.c-container2 h2 {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.c-container2 h3 {
+  font-size: 0.9rem;
+  color: rgb(146, 146, 146);
+  margin-bottom: 20px;
+}
+
+.c-container2 h4 {
+  font-size: 0.9rem;
+  color: rgb(146, 146, 146);
+  margin-bottom: 20px;
+}
+
+.c-container2 h4 span {
+  color: rgb(3, 3, 3);
+}
+
+.c-container2 s {
+  font-size: 1rem;
+  color: rgb(146, 146, 146);
+}
+
+.c-container2 h5 {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.c-container2 p {
+  font-size: 0.8rem;
+}
+
+.button_comprar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+#btnComprar {
+  outline: 0;
+  border: 0;
+  background-color: #4cc6b9;
+  color: #fff;
+  padding: 10px 126px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 10px;
+  transition: 0.5s;
+}
+
+#btnComprar:hover {
+  background-color: #1cad9f;
+  transition: 0.5s;
+}
+
+#btnVoltar {
+  outline: 0;
+  border: 0;
+  background-color: #db6076;
+  color: #fff;
+  padding: 10px 126px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 10px;
+  transition: 0.5s;
+}
+
+#btnVoltar:hover {
+  background-color: #b14b5c;
+  transition: 0.5s;
+}
+/* Termina a parte do Modal */
+
+/* pizza area */
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(219, 217, 217);
+}
+
+.tenis-area {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+  .tenis-area {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 320px) and (max-width: 425px) {
+  .tenis-area {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .c-card {
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    height: 220px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+
+  .c-card__item {
+    width: 95%;
+    height: 80%;
+    background-color: #e9e9e9;
+    cursor: pointer;
+  }
+
+  /* modal */
+  .container-item-c {
+    display: flex;
+    max-width: 95%;
+    height: auto;
+    background-color: rgb(255, 255, 255);
+    flex-direction: column;
+  }
+
+  .container-mobile-item {
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+  }
+
+  .c-container {
+    width: 80%;
+    height: 100%;
+    margin-left: 10px;
+    margin-right: 20px;
+  }
+
+  .c-container img {
+    width: 100%;
+  }
+
+  .c-container2 {
+    width: 80%;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+
+  .voltarMobile {
+    display: flex;
+  }
+
+  #btnVoltar {
+    display: none;
+  }
+
+  #btnComprar {
+    padding: 10px 40%;
+  }
+}
