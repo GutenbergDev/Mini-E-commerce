@@ -1,13 +1,13 @@
 # 🎫 Página inicial
 
 <h1 align="center">
-<img src="./img-project/miniEc.jpg">
+<img src="./images/img-readme/miniEc.jpg">
 </h1>
 
 # 🎫 Página de compra do produto
 
 <h1  align="center">
-<img src="./img-project/miniEc2.jpg" width="500px">
+<img src="./images/img-readme/miniEc2.jpg" width="500px">
 </h1>
 
 # 📋 Indice
